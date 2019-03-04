@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Identify</string>
+
+    <string name="filter">Add Filter</string>
+    <string name="settings">Settings</string>
+
+    <string name="item_type_header">Identify</string>
+
+
+    <string name="leaf_title">By Leaf</string>
+    <string name="bark_title">By Bark</string>
+
+    <!-- Leaf categories -->
+    <string name="needles">Needles</string>
+    <string name="scales_awls">Scales or Awls</string>
+    <string name="flat">Flat, Thin</string>
+
+    <!--NeedlesActivity text -->
+    <string name="clustered_needles">Clustered</string>
+    <string name="clustered_needles_description">Needles arranged in clusters of 2&#8211;5.</string>
+    <string name="arranged_needles">Arranged</string>
+    <string name="arranged_needles_description">Needles arranged individually.</string>
+
+    <!-- Scales text -->
+    <string name="northern_whitecedar">Eastern Arborvitae, Northern Whitecedar</string>
+    <string name="northern_whitecedar_description">Yellow-green, flattened and scale-like leaves on
+        outer twigs. Foliage arranged in flat, fan- like sprays.</string>
+    <string name="southern_whitecedar">Atlantic Whitecedar, Southern Whitecedar</string>
+    <string name="southern_whitecedar_description">Dark blue-green leaves. Foliage not arranged in flattened sprays.</string>
+    <string name="eastern_redcedar">Easter Redcedar</string>
+    <string name="eastern_redcedar_description">Dark green, blue-green, or purple-green leaves.
+        Has awl-shaped and scale-like on the same plant.</string>
+
+    <!--FlatThinActivity text -->
+    <string name="simple">Simple</string>
+    <string name="simple_description">One blade attached to stalk, or petiole.</string>
+    <string name="compound">Compound</string>
+    <string name="compound_description">Multiple blades attached to stalk, or petiole.</string>
+    <string name="fan">Fan</string>
+    <string name="fan_description">Fan-shaped leaves attached to spur-like branches.</string>
+
+
+</resources>

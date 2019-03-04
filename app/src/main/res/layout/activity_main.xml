@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.identify.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_grey_2"
+            android:elevation="8dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/item_type_header" />
+
+            <Spinner
+                android:id="@+id/item_type_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/filter_scroll_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:id="@+id/filter_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/leaf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/leaf_title" />
+
+        <HorizontalScrollView
+            android:id="@+id/leaf_panels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/needle_panel"
+                    style="@style/HomepagePanel"
+                    android:onClick="needleButtonPressed">
+
+                    <ImageView
+                        style="@style/HomepagePanelImage"
+                        android:src="@drawable/e6a1" />
+
+                    <TextView
+                        style="@style/HomepagePanelText"
+                        android:text="@string/needles" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/scale_panel"
+                    style="@style/HomepagePanel"
+                    android:onClick="scaleButtonPressed">
+
+                    <ImageView
+                        style="@style/HomepagePanelImage"
+                        android:src="@drawable/e6a2" />
+
+                    <TextView
+                        style="@style/HomepagePanelText"
+                        android:text="@string/scales_awls" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/flat_panel"
+                    style="@style/HomepagePanel"
+                    android:onClick="flatButtonPressed">
+
+                    <ImageView
+                        style="@style/HomepagePanelImage"
+                        android:src="@drawable/e6a3" />
+
+                    <TextView
+                        style="@style/HomepagePanelText"
+                        android:text="@string/flat" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/bark_title" />
+
+        <HorizontalScrollView
+            android:id="@+id/bark_panels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout style="@style/HomepagePanel">
+
+                    <ImageView
+                        style="@style/HomepagePanelImage"
+                        android:src="@drawable/e6a1" />
+
+                    <TextView
+                        style="@style/HomepagePanelText"
+                        android:text="@string/needles" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/HomepagePanel">
+
+                    <ImageView
+                        style="@style/HomepagePanelImage"
+                        android:src="@drawable/e6a2" />
+
+                    <TextView
+                        style="@style/HomepagePanelText"
+                        android:text="@string/scales_awls" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/HomepagePanel">
+
+                    <ImageView
+                        style="@style/HomepagePanelImage"
+                        android:src="@drawable/e6a3" />
+
+                    <TextView
+                        style="@style/HomepagePanelText"
+                        android:text="@string/flat" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>
